@@ -1,13 +1,5 @@
 const myImage = document.querySelector("img")
 
-myImage.addEventListener("click", () => {
-    const mySrc = myImage.getAttribute("src");
-    if (mySrc === "images/main-power-rangers-logo.png") {
-        myImage.setAttribute("src", "images/power-rangers-logo.png");
-    } else {
-        myImage.setAttribute("src", "images/main-power-rangers-logo.png");
-    }
-});
 
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
@@ -52,4 +44,5 @@ function setUserName() {
     localStorage.setItem("name", myName);
     myHeading.textContent = `Power Rangers progession list, ${myName}`;
   }
+
 }
